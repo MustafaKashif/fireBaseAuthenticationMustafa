@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+</head>
+<body class="text-info">
+    <div style="text-align: right">
+        <input type="button" value="logout" class="btn btn-outline-info m-3" onclick="logout()">
+    </div>
+    <div class="main p-4">
+    <h1>Hello Mustafa !</h1>
+</div>
+    <div class="main">
+        <div>
+            <form onsubmit="addTask(event)">
+                <input class="border border-warning" type="text" id="todoInput">
+                <input class="btn btn-outline-info" type="submit" value="Add">  
+            </form>
+        </div>
+    </div>
+        <div>
+            <ul id="parent"></ul>
+        </div>
+</body>
+<script type="module" src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
